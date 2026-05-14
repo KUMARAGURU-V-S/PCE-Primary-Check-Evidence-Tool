@@ -1,0 +1,10 @@
+evidence
+  -sbom
+  -log files -i
+   --access,monitor,error
+  -log retension -i (verification rotate 180)
+  -ntp setting
+     -samay1.nic.in
+     -samay2.nic.in
+     -time.nplindia.org
+  -ssdlc document -pdf

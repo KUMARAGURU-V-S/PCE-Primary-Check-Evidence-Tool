@@ -1,0 +1,4479 @@
+{
+  "matches": [
+    {
+      "vulnerability": {
+        "id": "GHSA-5hq9-5r78-2gjh",
+        "dataSource": "https://github.com/advisories/GHSA-5hq9-5r78-2gjh",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://nvd.nist.gov/vuln/detail/CVE-2025-6211",
+          "https://github.com/run-llama/llama_index/commit/29b2e07e64ed7d302b1cc058185560b28eaa1352",
+          "https://huntr.com/bounties/1a48a011-a3c5-4979-9ffc-9652280bc389"
+        ],
+        "description": "LlamaIndex vulnerable to data loss through hash collisions in its DocugamiReader class",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "3.0",
+            "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+            "metrics": {
+              "baseScore": 6.5,
+              "exploitabilityScore": 3.9,
+              "impactScore": 2.6
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2025-6211",
+            "epss": 0.00301,
+            "percentile": 0.5343,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2025-6211",
+            "cwe": "CWE-440",
+            "source": "security@huntr.dev",
+            "type": "Secondary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "0.12.41"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "0.12.41",
+              "date": "2025-07-11",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.17307499999999998
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2025-6211",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-6211",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/run-llama/llama_index/commit/29b2e07e64ed7d302b1cc058185560b28eaa1352",
+            "https://huntr.com/bounties/1a48a011-a3c5-4979-9ffc-9652280bc389"
+          ],
+          "description": "A vulnerability in the DocugamiReader class of the run-llama/llama_index repository, up to version 0.12.28, involves the use of MD5 hashing to generate IDs for document chunks. This approach leads to hash collisions when structurally distinct chunks contain identical text, resulting in one chunk overwriting another. This can cause loss of semantically or legally important document content, breakage of parent-child chunk hierarchies, and inaccurate or hallucinated responses in AI outputs. The issue is resolved in version 0.3.1.",
+          "cvss": [
+            {
+              "source": "security@huntr.dev",
+              "type": "Secondary",
+              "version": "3.0",
+              "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+              "metrics": {
+                "baseScore": 6.5,
+                "exploitabilityScore": 3.9,
+                "impactScore": 2.6
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2025-6211",
+              "epss": 0.00301,
+              "percentile": 0.5343,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2025-6211",
+              "cwe": "CWE-440",
+              "source": "security@huntr.dev",
+              "type": "Secondary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "llama-index",
+              "version": "0.12.38"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-5hq9-5r78-2gjh",
+            "versionConstraint": "<0.12.41 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "0.12.41"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/llama-index@0.12.38?package-id=1baba35e02246480",
+        "name": "llama-index",
+        "version": "0.12.38",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/llama_index-0.12.38.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/llama_index-0.12.38.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "MIT"
+        ],
+        "cpes": [
+          "cpe:2.3:a:jerry_liu_\\<jerry_project:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry_project:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerryproject:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerryproject:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama-index:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama-index:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama_index:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama_index:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry_project:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry_project:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry-liu-\\<jerry:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry-liu-\\<jerry:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerryproject:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerryproject:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama-index:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama-index:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama_index:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama_index:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama-index:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama-index:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama_index:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama_index:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry-liu-\\<jerry:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry-liu-\\<jerry:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama-index:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama-index:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama_index:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama_index:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama:llama_index:0.12.38:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/llama-index@0.12.38",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-7hfw-26vp-jp8m",
+        "dataSource": "https://github.com/advisories/GHSA-7hfw-26vp-jp8m",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-7hfw-26vp-jp8m",
+          "https://github.com/py-pdf/pypdf/issues/3429",
+          "https://github.com/py-pdf/pypdf/pull/3430",
+          "https://github.com/py-pdf/pypdf/blob/0dd57738bbdcdb63f0fb43d8a6b3d222b6946595/pypdf/filters.py#L72-L143",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.0.0",
+          "https://nvd.nist.gov/vuln/detail/CVE-2025-55197"
+        ],
+        "description": "PyPDF's Manipulated FlateDecode streams can exhaust RAM",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+            "metrics": {
+              "baseScore": 6.6
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2025-55197",
+            "epss": 0.00152,
+            "percentile": 0.35347,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2025-55197",
+            "cwe": "CWE-400",
+            "source": "security-advisories@github.com",
+            "type": "Secondary"
+          },
+          {
+            "cve": "CVE-2025-55197",
+            "cwe": "CWE-770",
+            "source": "security-advisories@github.com",
+            "type": "Secondary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.0.0"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.0.0",
+              "date": "2025-08-14",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.08816
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2025-55197",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-55197",
+          "namespace": "nvd:cpe",
+          "severity": "High",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/blob/0dd57738bbdcdb63f0fb43d8a6b3d222b6946595/pypdf/filters.py#L72-L143",
+            "https://github.com/py-pdf/pypdf/issues/3429",
+            "https://github.com/py-pdf/pypdf/pull/3430",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.0.0",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-7hfw-26vp-jp8m"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to version 6.0.0, an attacker can craft a PDF which leads to the RAM being exhausted. This requires just reading the file if a series of FlateDecode filters is used on a malicious cross-reference stream. Other content streams are affected on explicit access. This issue has been fixed in 6.0.0. If an update is not possible, a workaround involves including the fixed code from pypdf.filters.decompress into the existing filters file.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.5,
+                "exploitabilityScore": 3.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.6
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2025-55197",
+              "epss": 0.00152,
+              "percentile": 0.35347,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2025-55197",
+              "cwe": "CWE-400",
+              "source": "security-advisories@github.com",
+              "type": "Secondary"
+            },
+            {
+              "cve": "CVE-2025-55197",
+              "cwe": "CWE-770",
+              "source": "security-advisories@github.com",
+              "type": "Secondary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-7hfw-26vp-jp8m",
+            "versionConstraint": "<6.0.0 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.0.0"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-m449-cwjh-6pw7",
+        "dataSource": "https://github.com/advisories/GHSA-m449-cwjh-6pw7",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-jfx9-29x2-rv3j",
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-m449-cwjh-6pw7",
+          "https://github.com/py-pdf/pypdf/commit/96186725e5e6f237129a58a97cd19204a9ce40b2",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.4.0",
+          "https://nvd.nist.gov/vuln/detail/CVE-2025-66019",
+          "https://aydinnyunus.github.io/2025/12/20/cve-2025-66019-pypdf-lzw-dos"
+        ],
+        "description": "pypdf's LZWDecode streams be manipulated to exhaust RAM",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+            "metrics": {
+              "baseScore": 6.6
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2025-66019",
+            "epss": 0.00076,
+            "percentile": 0.22698,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2025-66019",
+            "cwe": "CWE-400",
+            "source": "security-advisories@github.com",
+            "type": "Secondary"
+          },
+          {
+            "cve": "CVE-2025-66019",
+            "cwe": "CWE-409",
+            "source": "security-advisories@github.com",
+            "type": "Secondary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.4.0"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.4.0",
+              "date": "2025-11-26",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.04408
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2025-66019",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-66019",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/96186725e5e6f237129a58a97cd19204a9ce40b2",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.4.0",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-m449-cwjh-6pw7",
+            "https://aydinnyunus.github.io/2025/12/20/cve-2025-66019-pypdf-lzw-dos/"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to version 6.4.0, an attacker who uses this vulnerability can craft a PDF which leads to a memory usage of up to 1 GB per stream. This requires parsing the content stream of a page using the LZWDecode filter. This issue has been patched in version 6.4.0.",
+          "cvss": [
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.6
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2025-66019",
+              "epss": 0.00076,
+              "percentile": 0.22698,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2025-66019",
+              "cwe": "CWE-400",
+              "source": "security-advisories@github.com",
+              "type": "Secondary"
+            },
+            {
+              "cve": "CVE-2025-66019",
+              "cwe": "CWE-409",
+              "source": "security-advisories@github.com",
+              "type": "Secondary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-m449-cwjh-6pw7",
+            "versionConstraint": "<6.4.0 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.4.0"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-jfx9-29x2-rv3j",
+        "dataSource": "https://github.com/advisories/GHSA-jfx9-29x2-rv3j",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-jfx9-29x2-rv3j",
+          "https://github.com/py-pdf/pypdf/pull/3502",
+          "https://github.com/py-pdf/pypdf/commit/e51d07807ffcdaf18077b9486dadb3dc05b368da",
+          "https://nvd.nist.gov/vuln/detail/CVE-2025-62708",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.1.3"
+        ],
+        "description": "pypdf can exhaust RAM via manipulated LZWDecode streams",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+            "metrics": {
+              "baseScore": 6.6
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2025-62708",
+            "epss": 0.00072,
+            "percentile": 0.21853,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2025-62708",
+            "cwe": "CWE-409",
+            "source": "security-advisories@github.com",
+            "type": "Secondary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.1.3"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.1.3",
+              "date": "2025-10-23",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.04176
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2025-62708",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-62708",
+          "namespace": "nvd:cpe",
+          "severity": "High",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/e51d07807ffcdaf18077b9486dadb3dc05b368da",
+            "https://github.com/py-pdf/pypdf/pull/3502",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.1.3",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-jfx9-29x2-rv3j"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to version 6.1.3, an attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires parsing the content stream of a page using the LZWDecode filter. This has been fixed in pypdf version 6.1.3.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.5,
+                "exploitabilityScore": 3.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.6
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2025-62708",
+              "epss": 0.00072,
+              "percentile": 0.21853,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2025-62708",
+              "cwe": "CWE-409",
+              "source": "security-advisories@github.com",
+              "type": "Secondary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-jfx9-29x2-rv3j",
+            "versionConstraint": "<6.1.3 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.1.3"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-x7hp-r3qg-r3cj",
+        "dataSource": "https://github.com/advisories/GHSA-x7hp-r3qg-r3cj",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-x7hp-r3qg-r3cj",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-27888",
+          "https://github.com/py-pdf/pypdf/pull/3658",
+          "https://github.com/py-pdf/pypdf/commit/7a4c8246ed48d9d328fb596942271da47b6d109c",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.7.3"
+        ],
+        "description": "pypdf: Manipulated FlateDecode XFA streams can exhaust RAM",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+            "metrics": {
+              "baseScore": 6.6
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-27888",
+            "epss": 0.00055,
+            "percentile": 0.1705,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-27888",
+            "cwe": "CWE-400",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.7.3"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.7.3",
+              "date": "2026-02-27",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.0319
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-27888",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-27888",
+          "namespace": "nvd:cpe",
+          "severity": "High",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/7a4c8246ed48d9d328fb596942271da47b6d109c",
+            "https://github.com/py-pdf/pypdf/pull/3658",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.7.3",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-x7hp-r3qg-r3cj"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to 6.7.3, an attacker who uses this vulnerability can craft a PDF which leads to the RAM being exhausted. This requires accessing the `xfa` property of a reader or writer and the corresponding stream being compressed using `/FlateDecode`. This has been fixed in pypdf 6.7.3. As a workaround, apply the patch manually.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.5,
+                "exploitabilityScore": 3.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.6
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-27888",
+              "epss": 0.00055,
+              "percentile": 0.1705,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-27888",
+              "cwe": "CWE-400",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-x7hp-r3qg-r3cj",
+            "versionConstraint": "<6.7.3 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.7.3"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-9m86-7pmv-2852",
+        "dataSource": "https://github.com/advisories/GHSA-9m86-7pmv-2852",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-9m86-7pmv-2852",
+          "https://github.com/py-pdf/pypdf/pull/3666",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.7.5",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-28804",
+          "https://github.com/py-pdf/pypdf/commit/648c627d2657447dfb1773412af05a0a5103b98f"
+        ],
+        "description": "pypdf vulnerable to inefficient decoding of ASCIIHexDecode streams",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 6.9
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-28804",
+            "epss": 0.00049,
+            "percentile": 0.15281,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-28804",
+            "cwe": "CWE-407",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.7.5"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.7.5",
+              "date": "2026-03-03",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.029154999999999997
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-28804",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-28804",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/648c627d2657447dfb1773412af05a0a5103b98f",
+            "https://github.com/py-pdf/pypdf/pull/3666",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.7.5",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-9m86-7pmv-2852"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to version 6.7.5, an attacker who uses this vulnerability can craft a PDF which leads to long runtimes. This requires accessing a stream which uses the /ASCIIHexDecode filter. This issue has been patched in version 6.7.5.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "metrics": {
+                "baseScore": 5.3,
+                "exploitabilityScore": 3.9,
+                "impactScore": 1.5
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.9
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-28804",
+              "epss": 0.00049,
+              "percentile": 0.15281,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-28804",
+              "cwe": "CWE-407",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-9m86-7pmv-2852",
+            "versionConstraint": "<6.7.5 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.7.5"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-vr63-x8vc-m265",
+        "dataSource": "https://github.com/advisories/GHSA-vr63-x8vc-m265",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-vr63-x8vc-m265",
+          "https://github.com/py-pdf/pypdf/pull/3501",
+          "https://nvd.nist.gov/vuln/detail/CVE-2025-62707",
+          "https://github.com/py-pdf/pypdf/commit/f2864d6dd9bac7cecd3f4f54308b25ebbfa178f8",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.1.3"
+        ],
+        "description": "pypdf possibly loops infinitely when reading DCT inline images without EOF marker",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+            "metrics": {
+              "baseScore": 6.6
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2025-62707",
+            "epss": 0.00047,
+            "percentile": 0.14371,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2025-62707",
+            "cwe": "CWE-834",
+            "source": "security-advisories@github.com",
+            "type": "Secondary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.1.3"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.1.3",
+              "date": "2025-10-23",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.027259999999999996
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2025-62707",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-62707",
+          "namespace": "nvd:cpe",
+          "severity": "High",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/f2864d6dd9bac7cecd3f4f54308b25ebbfa178f8",
+            "https://github.com/py-pdf/pypdf/pull/3501",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.1.3",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-vr63-x8vc-m265"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to version 6.1.3, an attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires parsing the content stream of a page which has an inline image using the DCTDecode filter. This has been fixed in pypdf version 6.1.3.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.5,
+                "exploitabilityScore": 3.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.6
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2025-62707",
+              "epss": 0.00047,
+              "percentile": 0.14371,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2025-62707",
+              "cwe": "CWE-834",
+              "source": "security-advisories@github.com",
+              "type": "Secondary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-vr63-x8vc-m265",
+            "versionConstraint": "<6.1.3 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.1.3"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-jj6c-8h6c-hppx",
+        "dataSource": "https://github.com/advisories/GHSA-jj6c-8h6c-hppx",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-jj6c-8h6c-hppx",
+          "https://github.com/py-pdf/pypdf/pull/3733",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.10.1",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-41168",
+          "https://github.com/py-pdf/pypdf/commit/62338e9d36419cf193ccec7331784f45df1d70b3"
+        ],
+        "description": "pypdf has long runtimes for wrong size values in cross-reference and object streams",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "3.1",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "metrics": {
+              "baseScore": 5.3,
+              "exploitabilityScore": 3.9,
+              "impactScore": 1.5
+            },
+            "vendorMetadata": {}
+          },
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 4.8
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-41168",
+            "epss": 0.00048,
+            "percentile": 0.14773,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-41168",
+            "cwe": "CWE-834",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.10.1"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.10.1",
+              "date": "2026-04-16",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.02412
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-41168",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-41168",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/62338e9d36419cf193ccec7331784f45df1d70b3",
+            "https://github.com/py-pdf/pypdf/pull/3733",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.10.1",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-jj6c-8h6c-hppx"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. An attacker who uses a vulnerability present in versions prior to 6.10.1 can craft a PDF which leads to long runtimes. This requires cross-reference streams with wrong large `/Size` values or object streams with wrong large `/N` values. This has been fixed in pypdf 6.10.1. As a workaround, one may apply the changes from the patch manually.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "metrics": {
+                "baseScore": 5.3,
+                "exploitabilityScore": 3.9,
+                "impactScore": 1.5
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.9
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-41168",
+              "epss": 0.00048,
+              "percentile": 0.14773,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-41168",
+              "cwe": "CWE-834",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-jj6c-8h6c-hppx",
+            "versionConstraint": "<6.10.1 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.10.1"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-rg9h-vx28-xxp5",
+        "dataSource": "https://github.com/advisories/GHSA-rg9h-vx28-xxp5",
+        "namespace": "github:language:python",
+        "severity": "High",
+        "urls": [
+          "https://nvd.nist.gov/vuln/detail/CVE-2025-7707",
+          "https://github.com/run-llama/llama_index/commit/98816394d57c7f53f847ed7b60725e69d0e7aae4",
+          "https://huntr.com/bounties/3fe2c8ab-6727-4aef-a0ef-4d2818e48803"
+        ],
+        "description": "llama-index has Insecure Temporary File",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "3.0",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+            "metrics": {
+              "baseScore": 7.1,
+              "exploitabilityScore": 1.9,
+              "impactScore": 5.2
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2025-7707",
+            "epss": 0.00027,
+            "percentile": 0.07929,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2025-7707",
+            "cwe": "CWE-377",
+            "source": "security@huntr.dev",
+            "type": "Secondary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "0.13.0"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "0.13.0",
+              "date": "2025-10-14",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.01971
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2025-7707",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-7707",
+          "namespace": "nvd:cpe",
+          "severity": "High",
+          "urls": [
+            "https://github.com/run-llama/llama_index/commit/98816394d57c7f53f847ed7b60725e69d0e7aae4",
+            "https://huntr.com/bounties/3fe2c8ab-6727-4aef-a0ef-4d2818e48803"
+          ],
+          "description": "The llama_index library version 0.12.33 sets the NLTK data directory to a subdirectory of the codebase by default, which is world-writable in multi-user environments. This configuration allows local users to overwrite, delete, or corrupt NLTK data files, leading to potential denial of service, data tampering, or privilege escalation. The vulnerability arises from the use of a shared cache directory instead of a user-specific one, making it susceptible to local data tampering and denial of service.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "metrics": {
+                "baseScore": 7.8,
+                "exploitabilityScore": 1.9,
+                "impactScore": 5.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security@huntr.dev",
+              "type": "Secondary",
+              "version": "3.0",
+              "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+              "metrics": {
+                "baseScore": 7.1,
+                "exploitabilityScore": 1.9,
+                "impactScore": 5.2
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2025-7707",
+              "epss": 0.00027,
+              "percentile": 0.07929,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2025-7707",
+              "cwe": "CWE-377",
+              "source": "security@huntr.dev",
+              "type": "Secondary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "llama-index",
+              "version": "0.12.38"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-rg9h-vx28-xxp5",
+            "versionConstraint": "<0.13.0 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "0.13.0"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/llama-index@0.12.38?package-id=1baba35e02246480",
+        "name": "llama-index",
+        "version": "0.12.38",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/llama_index-0.12.38.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/llama_index-0.12.38.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "MIT"
+        ],
+        "cpes": [
+          "cpe:2.3:a:jerry_liu_\\<jerry_project:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry_project:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerryproject:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerryproject:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama-index:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama-index:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama_index:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama_index:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry_project:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry_project:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry-liu-\\<jerry:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry-liu-\\<jerry:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerryproject:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerryproject:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama-index:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama-index:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama_index:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama_index:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama-index:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama-index:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama_index:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama_index:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry-liu-\\<jerry:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry-liu-\\<jerry:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:jerry_liu_\\<jerry:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama:python-llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama:python_llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-llama:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_llama:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama-index:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama-index:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama_index:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama_index:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:llama_index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama:llama-index:0.12.38:*:*:*:*:*:*:*",
+          "cpe:2.3:a:llama:llama_index:0.12.38:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/llama-index@0.12.38",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-4pxv-j86v-mhcw",
+        "dataSource": "https://github.com/advisories/GHSA-4pxv-j86v-mhcw",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-4pxv-j86v-mhcw",
+          "https://github.com/py-pdf/pypdf/pull/3735",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.10.2",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-41313",
+          "https://github.com/py-pdf/pypdf/commit/c50a0104cf083356f7c7f5d61410466a57f5c88a"
+        ],
+        "description": "pypdf: Possible long runtimes for wrong size values in incremental mode",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "3.1",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+            "metrics": {
+              "baseScore": 6.5,
+              "exploitabilityScore": 2.9,
+              "impactScore": 3.6
+            },
+            "vendorMetadata": {}
+          },
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 6.8
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-41313",
+            "epss": 0.00023,
+            "percentile": 0.06562,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-41313",
+            "cwe": "CWE-834",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.10.2"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.10.2",
+              "date": "2026-04-17",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.013397500000000001
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-41313",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-41313",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/c50a0104cf083356f7c7f5d61410466a57f5c88a",
+            "https://github.com/py-pdf/pypdf/pull/3735",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.10.2",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-4pxv-j86v-mhcw"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. An attacker who uses a vulnerability present in versions prior to 6.10.2 can craft a PDF which leads to long runtimes. This requires loading a PDF with a large trailer `/Size` value in incremental mode. This has been fixed in pypdf 6.10.2. As a workaround, one may apply the changes from the patch manually.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 6.5,
+                "exploitabilityScore": 2.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 4.8
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-41313",
+              "epss": 0.00023,
+              "percentile": 0.06562,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-41313",
+              "cwe": "CWE-834",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-4pxv-j86v-mhcw",
+            "versionConstraint": "<6.10.2 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.10.2"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-7gw9-cf7v-778f",
+        "dataSource": "https://github.com/advisories/GHSA-7gw9-cf7v-778f",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-7gw9-cf7v-778f",
+          "https://github.com/py-pdf/pypdf/pull/3734",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.10.2",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-41312",
+          "https://github.com/py-pdf/pypdf/commit/ac734dab4eef92bcce50d503949b4d9887d89f11"
+        ],
+        "description": "pypdf: Manipulated FlateDecode predictor parameters can exhaust RAM",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "3.1",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+            "metrics": {
+              "baseScore": 6.5,
+              "exploitabilityScore": 2.9,
+              "impactScore": 3.6
+            },
+            "vendorMetadata": {}
+          },
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 6.8
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-41312",
+            "epss": 0.00023,
+            "percentile": 0.06562,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-41312",
+            "cwe": "CWE-789",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.10.2"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.10.2",
+              "date": "2026-04-17",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.013397500000000001
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-41312",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-41312",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/ac734dab4eef92bcce50d503949b4d9887d89f11",
+            "https://github.com/py-pdf/pypdf/pull/3734",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.10.2",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-7gw9-cf7v-778f"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. An attacker who uses a vulnerability present in versions prior to 6.10.2 can craft a PDF which leads to the RAM being exhausted. This requires accessing a stream compressed using `/FlateDecode` with a `/Predictor` unequal 1 and large predictor parameters. This has been fixed in pypdf 6.10.2. As a workaround, one may apply the changes from the patch manually.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 6.5,
+                "exploitabilityScore": 2.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 4.8
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-41312",
+              "epss": 0.00023,
+              "percentile": 0.06562,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-41312",
+              "cwe": "CWE-789",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-7gw9-cf7v-778f",
+            "versionConstraint": "<6.10.2 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.10.2"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-x284-j5p8-9c5p",
+        "dataSource": "https://github.com/advisories/GHSA-x284-j5p8-9c5p",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-x284-j5p8-9c5p",
+          "https://github.com/py-pdf/pypdf/pull/3734",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.10.2",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-41314",
+          "https://github.com/py-pdf/pypdf/commit/ac734dab4eef92bcce50d503949b4d9887d89f11"
+        ],
+        "description": "pypdf: Manipulated FlateDecode image dimensions can exhaust RAM",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "3.1",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+            "metrics": {
+              "baseScore": 6.5,
+              "exploitabilityScore": 2.9,
+              "impactScore": 3.6
+            },
+            "vendorMetadata": {}
+          },
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 6.8
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-41314",
+            "epss": 0.00023,
+            "percentile": 0.06562,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-41314",
+            "cwe": "CWE-789",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.10.2"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.10.2",
+              "date": "2026-04-17",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.013397500000000001
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-41314",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-41314",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/ac734dab4eef92bcce50d503949b4d9887d89f11",
+            "https://github.com/py-pdf/pypdf/pull/3734",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.10.2",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-x284-j5p8-9c5p"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. An attacker who uses a vulnerability present in versions prior to 6.10.2 can craft a PDF which leads to the RAM being exhausted. This requires accessing an image using `/FlateDecode` with large size values. This has been fixed in pypdf 6.10.2. As a workaround, one may apply the changes from the patch manually.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 6.5,
+                "exploitabilityScore": 2.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 4.8
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-41314",
+              "epss": 0.00023,
+              "percentile": 0.06562,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-41314",
+              "cwe": "CWE-789",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-x284-j5p8-9c5p",
+            "versionConstraint": "<6.10.2 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.10.2"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-2rw7-x74f-jg35",
+        "dataSource": "https://github.com/advisories/GHSA-2rw7-x74f-jg35",
+        "namespace": "github:language:python",
+        "severity": "Low",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-2rw7-x74f-jg35",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-27628",
+          "https://github.com/py-pdf/pypdf/issues/3654",
+          "https://github.com/py-pdf/pypdf/commit/f0a462d36971cf077d74492a348d0d06fd60ea4d"
+        ],
+        "description": "pypdf has a possible infinite loop when loading circular /Prev entries in cross-reference streams",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U",
+            "metrics": {
+              "baseScore": 1.2
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-27628",
+            "epss": 0.00055,
+            "percentile": 0.17255,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-27628",
+            "cwe": "CWE-835",
+            "source": "security-advisories@github.com",
+            "type": "Secondary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.7.2"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.7.2",
+              "date": "2026-03-04",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.01155
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-27628",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-27628",
+          "namespace": "nvd:cpe",
+          "severity": "High",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/f0a462d36971cf077d74492a348d0d06fd60ea4d",
+            "https://github.com/py-pdf/pypdf/issues/3654",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-2rw7-x74f-jg35"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to 6.7.2, an attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires reading the file. This has been fixed in pypdf 6.7.2. As a workaround, one may apply the patch manually.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.5,
+                "exploitabilityScore": 3.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 1.2
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-27628",
+              "epss": 0.00055,
+              "percentile": 0.17255,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-27628",
+              "cwe": "CWE-835",
+              "source": "security-advisories@github.com",
+              "type": "Secondary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-2rw7-x74f-jg35",
+            "versionConstraint": "<6.7.2 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.7.2"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-f2v5-7jq9-h8cg",
+        "dataSource": "https://github.com/advisories/GHSA-f2v5-7jq9-h8cg",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-f2v5-7jq9-h8cg",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-28351",
+          "https://github.com/py-pdf/pypdf/pull/3664",
+          "https://github.com/py-pdf/pypdf/commit/f309c6003746414dc7b5048c19e6d879ff2dc858",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.7.4"
+        ],
+        "description": "pypdf: Manipulated RunLengthDecode streams can exhaust RAM",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 6.9
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-28351",
+            "epss": 0.00019,
+            "percentile": 0.05263,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-28351",
+            "cwe": "CWE-400",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.7.4"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.7.4",
+              "date": "2026-02-28",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.011304999999999999
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-28351",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-28351",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/f309c6003746414dc7b5048c19e6d879ff2dc858",
+            "https://github.com/py-pdf/pypdf/pull/3664",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.7.4",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-f2v5-7jq9-h8cg"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to version 6.7.4, an attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires parsing the content stream using the RunLengthDecode filter. This has been fixed in pypdf 6.7.4. As a workaround, consider applying the changes from PR #3664.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "metrics": {
+                "baseScore": 5.3,
+                "exploitabilityScore": 3.9,
+                "impactScore": 1.5
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.9
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-28351",
+              "epss": 0.00019,
+              "percentile": 0.05263,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-28351",
+              "cwe": "CWE-400",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-f2v5-7jq9-h8cg",
+            "versionConstraint": "<6.7.4 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.7.4"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-3crg-w4f6-42mx",
+        "dataSource": "https://github.com/advisories/GHSA-3crg-w4f6-42mx",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-3crg-w4f6-42mx",
+          "https://github.com/py-pdf/pypdf/pull/3724",
+          "https://github.com/py-pdf/pypdf/commit/b15a374e5ca648d4878e57c3b2c0551e7f8cc7f8",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.10.0",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-40260"
+        ],
+        "description": "pypdf: Manipulated XMP metadata entity declarations can exhaust RAM",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "3.1",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "metrics": {
+              "baseScore": 5.3,
+              "exploitabilityScore": 3.9,
+              "impactScore": 1.5
+            },
+            "vendorMetadata": {}
+          },
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 6.9
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-40260",
+            "epss": 0.00018,
+            "percentile": 0.04648,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-40260",
+            "cwe": "CWE-776",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.10.0"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.10.0",
+              "date": "2026-04-11",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.009989999999999999
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-40260",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-40260",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/b15a374e5ca648d4878e57c3b2c0551e7f8cc7f8",
+            "https://github.com/py-pdf/pypdf/pull/3724",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.10.0",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-3crg-w4f6-42mx"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. In versions prior to 6.10.0, manipulated XMP metadata entity declarations can exhaust RAM. An attacker who exploits this vulnerability can craft a PDF which leads to large memory usage. This requires parsing the XMP metadata. This issue has been fixed in version 6.10.0.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "metrics": {
+                "baseScore": 5.3,
+                "exploitabilityScore": 3.9,
+                "impactScore": 1.5
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.9
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-40260",
+              "epss": 0.00018,
+              "percentile": 0.04648,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-40260",
+              "cwe": "CWE-776",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-3crg-w4f6-42mx",
+            "versionConstraint": "<6.10.0 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.10.0"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-69w3-r845-3855",
+        "dataSource": "https://github.com/advisories/GHSA-69w3-r845-3855",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-1839",
+          "https://github.com/huggingface/transformers/commit/03c8082ba4594c9b8d6fe190ca9bed0e5f8ca396",
+          "https://huntr.com/bounties/3c77bb97-e493-493d-9a88-c57f5c536485",
+          "https://github.com/huggingface/transformers/releases/tag/v5.0.0rc3"
+        ],
+        "description": "HuggingFace Transformers allows for arbitrary code execution in the `Trainer` class",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "3.0",
+            "vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:L/A:H",
+            "metrics": {
+              "baseScore": 6.5,
+              "exploitabilityScore": 1.1,
+              "impactScore": 5.5
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-1839",
+            "epss": 0.00017,
+            "percentile": 0.04293,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-1839",
+            "cwe": "CWE-502",
+            "source": "security@huntr.dev",
+            "type": "Secondary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "5.0.0rc3"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "5.0.0rc3",
+              "date": "2026-04-08",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.009775
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-1839",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-1839",
+          "namespace": "nvd:cpe",
+          "severity": "High",
+          "urls": [
+            "https://github.com/huggingface/transformers/commit/03c8082ba4594c9b8d6fe190ca9bed0e5f8ca396",
+            "https://huntr.com/bounties/3c77bb97-e493-493d-9a88-c57f5c536485"
+          ],
+          "description": "A vulnerability in the HuggingFace Transformers library, specifically in the `Trainer` class, allows for arbitrary code execution. The `_load_rng_state()` method in `src/transformers/trainer.py` at line 3059 calls `torch.load()` without the `weights_only=True` parameter. This issue affects all versions of the library supporting `torch>=2.2` when used with PyTorch versions below 2.6, as the `safe_globals()` context manager provides no protection in these versions. An attacker can exploit this vulnerability by supplying a malicious checkpoint file, such as `rng_state.pth`, which can execute arbitrary code when loaded. The issue is resolved in version v5.0.0rc3.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "metrics": {
+                "baseScore": 7.8,
+                "exploitabilityScore": 1.9,
+                "impactScore": 5.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security@huntr.dev",
+              "type": "Secondary",
+              "version": "3.0",
+              "vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:L/A:H",
+              "metrics": {
+                "baseScore": 6.5,
+                "exploitabilityScore": 1.1,
+                "impactScore": 5.5
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-1839",
+              "epss": 0.00017,
+              "percentile": 0.04293,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-1839",
+              "cwe": "CWE-502",
+              "source": "security@huntr.dev",
+              "type": "Secondary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "transformers",
+              "version": "4.57.6"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-69w3-r845-3855",
+            "versionConstraint": "<5.0.0rc3 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "5.0.0rc3"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/transformers@4.57.6?package-id=303cea706d79c53a",
+        "name": "transformers",
+        "version": "4.57.6",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/transformers-4.57.6.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/transformers-4.57.6.dist-info/RECORD",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/transformers-4.57.6.dist-info/top_level.txt",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "Apache 2.0 License"
+        ],
+        "cpes": [
+          "cpe:2.3:a:hugging_face_team_\\(past_and_future\\)_with_the_help_of_all_our_contributors_\\(https\\:\\/\\/github_com\\/huggingface\\/transformers\\/graphs\\/contributors\\)_project:python-transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:hugging_face_team_\\(past_and_future\\)_with_the_help_of_all_our_contributors_\\(https\\:\\/\\/github_com\\/huggingface\\/transformers\\/graphs\\/contributors\\)_project:python_transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:hugging_face_team_\\(past_and_future\\)_with_the_help_of_all_our_contributors_\\(https\\:\\/\\/github_com\\/huggingface\\/transformers\\/graphs\\/contributors\\)project:python-transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:hugging_face_team_\\(past_and_future\\)_with_the_help_of_all_our_contributors_\\(https\\:\\/\\/github_com\\/huggingface\\/transformers\\/graphs\\/contributors\\)project:python_transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:hugging_face_team_\\(past_and_future\\)_with_the_help_of_all_our_contributors_\\(https\\:\\/\\/github_com\\/huggingface\\/transformers\\/graphs\\/contributors\\)_project:transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:hugging_face_team_\\(past_and_future\\)_with_the_help_of_all_our_contributors_\\(https\\:\\/\\/github_com\\/huggingface\\/transformers\\/graphs\\/contributors\\):python-transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:hugging_face_team_\\(past_and_future\\)_with_the_help_of_all_our_contributors_\\(https\\:\\/\\/github_com\\/huggingface\\/transformers\\/graphs\\/contributors\\):python_transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:hugging_face_team_\\(past_and_future\\)_with_the_help_of_all_our_contributors_\\(https\\:\\/\\/github_com\\/huggingface\\/transformers\\/graphs\\/contributors\\)project:transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:hugging_face_team_\\(past_and_future\\)_with_the_help_of_all_our_contributors_\\(https\\:\\/\\/github_com\\/huggingface\\/transformers\\/graphs\\/contributors\\):transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:transformers_project:python-transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:transformers_project:python_transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-transformers:python-transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-transformers:python_transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_transformers:python-transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_transformers:python_transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:transformersproject:python-transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:transformersproject:python_transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:transformers_project:transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-transformers:transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_transformers:transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:transformers:python-transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:transformers:python_transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:transformersproject:transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python-transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python_transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:transformers:transformers:4.57.6:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:transformers:4.57.6:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/transformers@4.57.6",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-87mj-5ggw-8qc3",
+        "dataSource": "https://github.com/advisories/GHSA-87mj-5ggw-8qc3",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-87mj-5ggw-8qc3",
+          "https://github.com/py-pdf/pypdf/pull/3693",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.9.2",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-33699"
+        ],
+        "description": "pypdf: Possible infinite loop during recovery attempts in DictionaryObject.read_from_stream",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+            "metrics": {
+              "baseScore": 4.6
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-33699",
+            "epss": 0.00017,
+            "percentile": 0.04355,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-33699",
+            "cwe": "CWE-835",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.9.2"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.9.2",
+              "date": "2026-03-26",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.00816
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-33699",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-33699",
+          "namespace": "nvd:cpe",
+          "severity": "High",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/pull/3693",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.9.2",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-87mj-5ggw-8qc3"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Versions prior to 6.9.2 have a vulnerability in which an attacker can craft a PDF which leads to an infinite loop. This requires reading a file in non-strict mode. This has been fixed in pypdf 6.9.2. If users cannot upgrade yet, consider applying the changes from the patch manually.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 7.5,
+                "exploitabilityScore": 3.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 4.6
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-33699",
+              "epss": 0.00017,
+              "percentile": 0.04355,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-33699",
+              "cwe": "CWE-835",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-87mj-5ggw-8qc3",
+            "versionConstraint": "<6.9.2 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.9.2"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-4f6g-68pf-7vhv",
+        "dataSource": "https://github.com/advisories/GHSA-4f6g-68pf-7vhv",
+        "namespace": "github:language:python",
+        "severity": "Low",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-4f6g-68pf-7vhv",
+          "https://github.com/py-pdf/pypdf/pull/3594",
+          "https://github.com/py-pdf/pypdf/commit/294165726b646bb7799be1cc787f593f2fdbcf45",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.6.0",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-22691"
+        ],
+        "description": "pypdf has possible long runtimes for malformed startxref",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U",
+            "metrics": {
+              "baseScore": 2.7
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-22691",
+            "epss": 0.00023,
+            "percentile": 0.06519,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-22691",
+            "cwe": "CWE-400",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          },
+          {
+            "cve": "CVE-2026-22691",
+            "cwe": "CWE-1333",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.6.0"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.6.0",
+              "date": "2026-01-10",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.006555000000000001
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-22691",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-22691",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/294165726b646bb7799be1cc787f593f2fdbcf45",
+            "https://github.com/py-pdf/pypdf/pull/3594",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.6.0",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-4f6g-68pf-7vhv"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to version 6.6.0, pypdf has possible long runtimes for malformed startxref. An attacker who uses this vulnerability can craft a PDF which leads to possibly long runtimes for invalid startxref entries. When rebuilding the cross-reference table, PDF files with lots of whitespace characters become problematic. Only the non-strict reading mode is affected. Only the non-strict reading mode is affected. This issue has been patched in version 6.6.0.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "metrics": {
+                "baseScore": 5.3,
+                "exploitabilityScore": 3.9,
+                "impactScore": 1.5
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 2.7
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-22691",
+              "epss": 0.00023,
+              "percentile": 0.06519,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-22691",
+              "cwe": "CWE-400",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            },
+            {
+              "cve": "CVE-2026-22691",
+              "cwe": "CWE-1333",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-4f6g-68pf-7vhv",
+            "versionConstraint": "<6.6.0 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.6.0"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-4xc4-762w-m6cg",
+        "dataSource": "https://github.com/advisories/GHSA-4xc4-762w-m6cg",
+        "namespace": "github:language:python",
+        "severity": "Low",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-4xc4-762w-m6cg",
+          "https://github.com/py-pdf/pypdf/pull/3594",
+          "https://github.com/py-pdf/pypdf/commit/294165726b646bb7799be1cc787f593f2fdbcf45",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.6.0",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-22690"
+        ],
+        "description": "pypdf has possible long runtimes for missing /Root object with large /Size values",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U",
+            "metrics": {
+              "baseScore": 2.7
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-22690",
+            "epss": 0.00023,
+            "percentile": 0.06519,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-22690",
+            "cwe": "CWE-400",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.6.0"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.6.0",
+              "date": "2026-01-10",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.006555000000000001
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-22690",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-22690",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/294165726b646bb7799be1cc787f593f2fdbcf45",
+            "https://github.com/py-pdf/pypdf/pull/3594",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.6.0",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-4xc4-762w-m6cg"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to version 6.6.0, pypdf has possible long runtimes for missing /Root object with large /Size values. An attacker who uses this vulnerability can craft a PDF which leads to possibly long runtimes for actually invalid files. This can be achieved by omitting the /Root entry in the trailer, while using a rather large /Size value. Only the non-strict reading mode is affected. This issue has been patched in version 6.6.0.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "metrics": {
+                "baseScore": 5.3,
+                "exploitabilityScore": 3.9,
+                "impactScore": 1.5
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 2.7
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-22690",
+              "epss": 0.00023,
+              "percentile": 0.06519,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-22690",
+              "cwe": "CWE-400",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-4xc4-762w-m6cg",
+            "versionConstraint": "<6.6.0 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.6.0"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-qpxp-75px-xjcp",
+        "dataSource": "https://github.com/advisories/GHSA-qpxp-75px-xjcp",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-qpxp-75px-xjcp",
+          "https://github.com/py-pdf/pypdf/pull/3686",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.9.1",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-33123"
+        ],
+        "description": "pypdf has inefficient decoding of array-based streams",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 5.1
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-33123",
+            "epss": 0.00012,
+            "percentile": 0.01746,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-33123",
+            "cwe": "CWE-400",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          },
+          {
+            "cve": "CVE-2026-33123",
+            "cwe": "CWE-407",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.9.1"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.9.1",
+              "date": "2026-03-18",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.00606
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-33123",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-33123",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/pull/3686",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.9.1",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-qpxp-75px-xjcp"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Versions prior to 6.9.1 allow an attacker to craft a malicious PDF which leads to long runtimes and/or large memory usage. Exploitation requires accessing an array-based stream with many entries. This issue has been fixed in version 6.9.1.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 6.5,
+                "exploitabilityScore": 2.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 5.1
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-33123",
+              "epss": 0.00012,
+              "percentile": 0.01746,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-33123",
+              "cwe": "CWE-400",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            },
+            {
+              "cve": "CVE-2026-33123",
+              "cwe": "CWE-407",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-qpxp-75px-xjcp",
+            "versionConstraint": "<6.9.1 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.9.1"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-2q4j-m29v-hq73",
+        "dataSource": "https://github.com/advisories/GHSA-2q4j-m29v-hq73",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-2q4j-m29v-hq73",
+          "https://github.com/py-pdf/pypdf/pull/3610",
+          "https://github.com/py-pdf/pypdf/commit/b1282f8dcdc1a7b41ceab6740ffddfdf31b1fec1",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.6.2",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-24688"
+        ],
+        "description": "pypdf has possible Infinite Loop when processing outlines/bookmarks",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 5.1
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-24688",
+            "epss": 0.00011,
+            "percentile": 0.01485,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-24688",
+            "cwe": "CWE-835",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.6.2"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.6.2",
+              "date": "2026-01-27",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.005555
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-24688",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-24688",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/b1282f8dcdc1a7b41ceab6740ffddfdf31b1fec1",
+            "https://github.com/py-pdf/pypdf/pull/3610",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.6.2",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-2q4j-m29v-hq73"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. An attacker who uses an infinite loop vulnerability that is present in versions prior to 6.6.2 can craft a PDF which leads to an infinite loop. This requires accessing the outlines/bookmarks. This has been fixed in pypdf 6.6.2. If projects cannot upgrade yet, consider applying the changes from PR #3610 manually.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "metrics": {
+                "baseScore": 4.3,
+                "exploitabilityScore": 2.9,
+                "impactScore": 1.5
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 5.1
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-24688",
+              "epss": 0.00011,
+              "percentile": 0.01485,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-24688",
+              "cwe": "CWE-835",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-2q4j-m29v-hq73",
+            "versionConstraint": "<6.6.2 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.6.2"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-996q-pr4m-cvgq",
+        "dataSource": "https://github.com/advisories/GHSA-996q-pr4m-cvgq",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-996q-pr4m-cvgq",
+          "https://github.com/py-pdf/pypdf/pull/3645",
+          "https://github.com/py-pdf/pypdf/commit/bd2f6d052fe5941e85e37082c2a43453d48d1295",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.7.1",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-27024"
+        ],
+        "description": "pypdf has a possible infinite loop when processing TreeObject",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 6.9
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-27024",
+            "epss": 0.00006,
+            "percentile": 0.003,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-27024",
+            "cwe": "CWE-835",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.7.1"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.7.1",
+              "date": "2026-03-04",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.0035700000000000003
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-27024",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-27024",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/bd2f6d052fe5941e85e37082c2a43453d48d1295",
+            "https://github.com/py-pdf/pypdf/pull/3645",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.7.1",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-996q-pr4m-cvgq"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to 6.7.1, an attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires accessing the children of a TreeObject, for example as part of outlines. This vulnerability is fixed in 6.7.1.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 5.5,
+                "exploitabilityScore": 1.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.9
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-27024",
+              "epss": 0.00006,
+              "percentile": 0.003,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-27024",
+              "cwe": "CWE-835",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-996q-pr4m-cvgq",
+            "versionConstraint": "<6.7.1 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.7.1"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-9mvc-8737-8j8h",
+        "dataSource": "https://github.com/advisories/GHSA-9mvc-8737-8j8h",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-9mvc-8737-8j8h",
+          "https://github.com/py-pdf/pypdf/pull/3644",
+          "https://github.com/py-pdf/pypdf/commit/7905842d833f899f1d3228af7e7467ad80277016",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.7.1",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-27026"
+        ],
+        "description": "pypdf possibly has long runtimes for malformed FlateDecode streams",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 6.9
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-27026",
+            "epss": 0.00006,
+            "percentile": 0.003,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-27026",
+            "cwe": "CWE-770",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.7.1"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.7.1",
+              "date": "2026-03-04",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.0035700000000000003
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-27026",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-27026",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/7905842d833f899f1d3228af7e7467ad80277016",
+            "https://github.com/py-pdf/pypdf/pull/3644",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.7.1",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-9mvc-8737-8j8h"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to 6.7.1, an attacker who uses this vulnerability can craft a PDF which leads to long runtimes. This requires a malformed /FlateDecode stream, where the byte-by-byte decompression is used. This vulnerability is fixed in 6.7.1.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 5.5,
+                "exploitabilityScore": 1.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.9
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-27026",
+              "epss": 0.00006,
+              "percentile": 0.003,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-27026",
+              "cwe": "CWE-770",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-9mvc-8737-8j8h",
+            "versionConstraint": "<6.7.1 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.7.1"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-wgvp-vg3v-2xq3",
+        "dataSource": "https://github.com/advisories/GHSA-wgvp-vg3v-2xq3",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-wgvp-vg3v-2xq3",
+          "https://github.com/py-pdf/pypdf/pull/3646",
+          "https://github.com/py-pdf/pypdf/commit/77d7b8d7cfbe8dd179858dfa42666f73fc6e57a2",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.7.1",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-27025"
+        ],
+        "description": "pypdf has possible long runtimes/large memory usage for large /ToUnicode streams",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 6.9
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-27025",
+            "epss": 0.00006,
+            "percentile": 0.003,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-27025",
+            "cwe": "CWE-834",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.7.1"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.7.1",
+              "date": "2026-03-04",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.0035700000000000003
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-27025",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-27025",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/commit/77d7b8d7cfbe8dd179858dfa42666f73fc6e57a2",
+            "https://github.com/py-pdf/pypdf/pull/3646",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.7.1",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-wgvp-vg3v-2xq3"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to 6.7.1, an attacker who uses this vulnerability can craft a PDF which leads to long runtimes and large memory consumption. This requires parsing the /ToUnicode entry of a font with unusually large values, for example during text extraction. This vulnerability is fixed in 6.7.1.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 5.5,
+                "exploitabilityScore": 1.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.9
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-27025",
+              "epss": 0.00006,
+              "percentile": 0.003,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-27025",
+              "cwe": "CWE-834",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-wgvp-vg3v-2xq3",
+            "versionConstraint": "<6.7.1 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.7.1"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "GHSA-hqmh-ppp3-xvm7",
+        "dataSource": "https://github.com/advisories/GHSA-hqmh-ppp3-xvm7",
+        "namespace": "github:language:python",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/py-pdf/pypdf/security/advisories/GHSA-hqmh-ppp3-xvm7",
+          "https://github.com/py-pdf/pypdf/pull/3675",
+          "https://github.com/py-pdf/pypdf/commit/3c550b3196adeba1506a26e57c09c09fac75e9aa",
+          "https://github.com/py-pdf/pypdf/releases/tag/6.8.0",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-31826"
+        ],
+        "description": "pypdf: manipulated stream length values can exhaust RAM",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+            "metrics": {
+              "baseScore": 6.8
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2026-31826",
+            "epss": 0.00004,
+            "percentile": 0.00199,
+            "date": "2026-05-12"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2026-31826",
+            "cwe": "CWE-770",
+            "source": "security-advisories@github.com",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "6.8.0"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "6.8.0",
+              "date": "2026-03-11",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.00236
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2026-31826",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-31826",
+          "namespace": "nvd:cpe",
+          "severity": "Medium",
+          "urls": [
+            "https://github.com/py-pdf/pypdf/pull/3675",
+            "https://github.com/py-pdf/pypdf/releases/tag/6.8.0",
+            "https://github.com/py-pdf/pypdf/security/advisories/GHSA-hqmh-ppp3-xvm7"
+          ],
+          "description": "pypdf is a free and open-source pure-python PDF library. Prior to 6.8.0, an attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires parsing a content stream with a rather large /Length value, regardless of the actual data length inside the stream. This vulnerability is fixed in 6.8.0.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "metrics": {
+                "baseScore": 5.5,
+                "exploitabilityScore": 1.9,
+                "impactScore": 3.6
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "security-advisories@github.com",
+              "type": "Secondary",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+              "metrics": {
+                "baseScore": 6.8
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2026-31826",
+              "epss": 0.00004,
+              "percentile": 0.00199,
+              "date": "2026-05-12"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2026-31826",
+              "cwe": "CWE-770",
+              "source": "security-advisories@github.com",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "python-matcher",
+          "searchedBy": {
+            "language": "python",
+            "namespace": "github:language:python",
+            "package": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-hqmh-ppp3-xvm7",
+            "versionConstraint": "<6.8.0 (python)"
+          },
+          "fix": {
+            "suggestedVersion": "6.8.0"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "pkg:pypi/pypdf@5.9.0?package-id=4a22c6222e66815b",
+        "name": "pypdf",
+        "version": "5.9.0",
+        "type": "python",
+        "locations": [
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/METADATA",
+            "accessPath": ""
+          },
+          {
+            "path": "/graphrag implement/venv/lib/python3.14/site-packages/pypdf-5.9.0.dist-info/RECORD",
+            "accessPath": ""
+          }
+        ],
+        "language": "python",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "cpes": [
+          "cpe:2.3:a:pypdf_project:pypdf:5.9.0:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:pypi/pypdf@5.9.0",
+        "upstreams": []
+      }
+    }
+  ],
+  "source": {
+    "type": "file",
+    "target": "."
+  },
+  "distro": {
+    "name": "",
+    "version": "",
+    "idLike": null
+  },
+  "descriptor": {
+    "name": "grype",
+    "version": "0.112.0",
+    "configuration": {
+      "output": [
+        "json"
+      ],
+      "file": "",
+      "pretty": false,
+      "distro": "",
+      "add-cpes-if-none": false,
+      "output-template-file": "",
+      "check-for-app-update": true,
+      "only-fixed": false,
+      "only-notfixed": false,
+      "ignore-wontfix": "",
+      "platform": "",
+      "search": {
+        "scope": "squashed",
+        "unindexed-archives": false,
+        "indexed-archives": true
+      },
+      "ignore": [
+        {
+          "vulnerability": "",
+          "include-aliases": false,
+          "reason": "",
+          "namespace": "",
+          "fix-state": "",
+          "package": {
+            "name": "kernel-headers",
+            "version": "",
+            "language": "",
+            "type": "rpm",
+            "location": "",
+            "upstream-name": "kernel"
+          },
+          "vex-status": "",
+          "vex-justification": "",
+          "match-type": "exact-indirect-match"
+        },
+        {
+          "vulnerability": "",
+          "include-aliases": false,
+          "reason": "",
+          "namespace": "",
+          "fix-state": "",
+          "package": {
+            "name": "linux(-.*)?-headers-.*",
+            "version": "",
+            "language": "",
+            "type": "deb",
+            "location": "",
+            "upstream-name": "linux.*"
+          },
+          "vex-status": "",
+          "vex-justification": "",
+          "match-type": "exact-indirect-match"
+        },
+        {
+          "vulnerability": "",
+          "include-aliases": false,
+          "reason": "",
+          "namespace": "",
+          "fix-state": "",
+          "package": {
+            "name": "linux-libc-dev",
+            "version": "",
+            "language": "",
+            "type": "deb",
+            "location": "",
+            "upstream-name": "linux"
+          },
+          "vex-status": "",
+          "vex-justification": "",
+          "match-type": "exact-indirect-match"
+        }
+      ],
+      "exclude": [],
+      "externalSources": {
+        "enable": false,
+        "maven": {
+          "searchUpstreamBySha1": true,
+          "baseUrl": "https://search.maven.org/solrsearch/select",
+          "rateLimit": 300000000
+        }
+      },
+      "match": {
+        "java": {
+          "using-cpes": false
+        },
+        "jvm": {
+          "using-cpes": true
+        },
+        "dotnet": {
+          "using-cpes": false
+        },
+        "golang": {
+          "using-cpes": false,
+          "always-use-cpe-for-stdlib": true,
+          "allow-main-module-pseudo-version-comparison": false
+        },
+        "javascript": {
+          "using-cpes": false
+        },
+        "python": {
+          "using-cpes": false
+        },
+        "ruby": {
+          "using-cpes": false
+        },
+        "rust": {
+          "using-cpes": false
+        },
+        "hex": {
+          "using-cpes": false
+        },
+        "stock": {
+          "using-cpes": true
+        },
+        "dpkg": {
+          "using-cpes": false,
+          "missing-epoch-strategy": "zero",
+          "use-cpes-for-eol": false
+        },
+        "rpm": {
+          "using-cpes": false,
+          "missing-epoch-strategy": "auto",
+          "use-cpes-for-eol": false
+        }
+      },
+      "fail-on-severity": "",
+      "registry": {
+        "insecure-skip-tls-verify": false,
+        "insecure-use-http": false,
+        "ca-cert": ""
+      },
+      "show-suppressed": false,
+      "by-cve": false,
+      "SortBy": {
+        "sort-by": "risk"
+      },
+      "name": "",
+      "default-image-pull-source": "",
+      "from": null,
+      "vex-documents": [],
+      "vex-add": [],
+      "match-upstream-kernel-headers": false,
+      "fix-channel": {
+        "redhat-eus": {
+          "apply": "auto",
+          "versions": ">= 8.0"
+        }
+      },
+      "timestamp": true,
+      "alerts": {
+        "enable-eol-distro-warnings": true
+      },
+      "db": {
+        "cache-dir": "/home/kumaraguru/.cache/grype/db",
+        "update-url": "https://grype.anchore.io/databases",
+        "ca-cert": "",
+        "auto-update": true,
+        "validate-by-hash-on-start": true,
+        "validate-age": true,
+        "max-allowed-built-age": 432000000000000,
+        "require-update-check": false,
+        "update-available-timeout": 30000000000,
+        "update-download-timeout": 300000000000,
+        "max-update-check-frequency": 7200000000000
+      },
+      "exp": {},
+      "dev": {
+        "db": {
+          "debug": false
+        }
+      }
+    },
+    "db": {
+      "status": {
+        "schemaVersion": "v6.1.4",
+        "from": "https://grype.anchore.io/databases/v6/vulnerability-db_v6.1.4_2026-05-13T00:47:21Z_1778657102.tar.zst?checksum=sha256%3A14a3e6948bc99af4737992c6c8cc6a8d6f044e9f617cd72c479f7ba05a4779c6",
+        "built": "2026-05-13T07:25:02Z",
+        "path": "/home/kumaraguru/.cache/grype/db/6/vulnerability.db",
+        "valid": true
+      },
+      "providers": {
+        "alma": {
+          "captured": "2026-05-13T00:47:29Z",
+          "input": "xxh64:70e3e30563a950ee"
+        },
+        "alpine": {
+          "captured": "2026-05-13T00:48:08Z",
+          "input": "xxh64:84a4fe4362d4a183"
+        },
+        "amazon": {
+          "captured": "2026-05-13T00:47:22Z",
+          "input": "xxh64:72ca28bd7ec47c0c"
+        },
+        "arch": {
+          "captured": "2026-05-13T00:47:54Z",
+          "input": "xxh64:d2cbd272dfa7d2ae"
+        },
+        "bitnami": {
+          "captured": "2026-05-13T00:47:31Z",
+          "input": "xxh64:36fda71a20c7744e"
+        },
+        "chainguard": {
+          "captured": "2026-05-13T00:47:21Z",
+          "input": "xxh64:763a7935a8d92716"
+        },
+        "chainguard-libraries": {
+          "captured": "2026-05-13T00:47:56Z",
+          "input": "xxh64:871b065d0f6f4be1"
+        },
+        "debian": {
+          "captured": "2026-05-13T00:47:48Z",
+          "input": "xxh64:9dc16443aa682f49"
+        },
+        "echo": {
+          "captured": "2026-05-13T00:47:30Z",
+          "input": "xxh64:86b1bbd54a3d334a"
+        },
+        "eol": {
+          "captured": "2026-05-13T00:47:54Z",
+          "input": "xxh64:46ebf5deb602b8ae"
+        },
+        "epss": {
+          "captured": "2026-05-13T00:47:55Z",
+          "input": "xxh64:8802711865c835eb"
+        },
+        "fedora": {
+          "captured": "2026-05-13T00:47:53Z",
+          "input": "xxh64:8f591cf084032512"
+        },
+        "github": {
+          "captured": "2026-05-13T00:48:08Z",
+          "input": "xxh64:7d31bf300a444966"
+        },
+        "hummingbird": {
+          "captured": "2026-05-13T01:25:48Z",
+          "input": "xxh64:166629127a88d297"
+        },
+        "kev": {
+          "captured": "2026-05-13T00:47:58Z",
+          "input": "xxh64:1ab77b43460f16cb"
+        },
+        "mariner": {
+          "captured": "2026-05-13T00:47:33Z",
+          "input": "xxh64:ef3e357f6b8a2a0e"
+        },
+        "minimos": {
+          "captured": "2026-05-13T00:47:26Z",
+          "input": "xxh64:e5a04b10ebaee27f"
+        },
+        "nvd": {
+          "captured": "2026-05-13T00:48:03Z",
+          "input": "xxh64:6e03e5d6c82a3eb2"
+        },
+        "oracle": {
+          "captured": "2026-05-13T00:47:54Z",
+          "input": "xxh64:f8223d6b939f8dfd"
+        },
+        "photon": {
+          "captured": "2026-05-13T00:47:58Z",
+          "input": "xxh64:4555c635391900e9"
+        },
+        "rhel": {
+          "captured": "2026-05-13T00:48:28Z",
+          "input": "xxh64:a52d38ecd6e6b6cf"
+        },
+        "secureos": {
+          "captured": "2026-05-13T00:47:28Z",
+          "input": "xxh64:f680469eda8d3af3"
+        },
+        "sles": {
+          "captured": "2026-05-13T01:25:50Z",
+          "input": "xxh64:f4f3efc0794a70ef"
+        },
+        "ubuntu": {
+          "captured": "2026-05-13T01:04:09Z",
+          "input": "xxh64:67d2568dcee3e49b"
+        },
+        "wolfi": {
+          "captured": "2026-05-13T00:47:39Z",
+          "input": "xxh64:f2ce6734313260ba"
+        }
+      }
+    },
+    "timestamp": "2026-05-14T11:14:02.18513285+05:30"
+  }
+}

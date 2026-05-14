@@ -1,0 +1,3 @@
+listen i need to create a tool which will be used by my team to automate manual works of verifying evidence for now tyour first task is 
+1.if a sbom file has been dropped it should analysed with syft anf grype and the results should be documented with respective formats 
+2. see the @to do file which contains five evidence types there should be five boxes to drag and drop thse files now work on the sbom only and acknowlegde
