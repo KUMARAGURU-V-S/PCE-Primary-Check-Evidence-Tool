@@ -1,0 +1,8 @@
+# Simple Dockerfile for frontend local development via compose
+FROM node:24-bullseye
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 5173
+CMD ["npm", "run", "dev", "--", "--host"]
