@@ -58,7 +58,8 @@ const App: React.FC = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:3001/api/${endpoint}`, {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      const response = await fetch(`${apiUrl}/api/${endpoint}`, {
         method: 'POST',
         body: formData,
       });
@@ -144,7 +145,7 @@ const App: React.FC = () => {
                   ))}
                 </div>
                 <div className="action-bar">
-                  <a href={`http://localhost:3001${(result as SbomResult).excelReport}`} className="btn-primary" download>
+                  <a href={`${import.meta.env.VITE_API_URL || 'http://localhost:3001'}${(result as SbomResult).excelReport}`} className="btn-primary" download>
                     Generate Detailed Security Audit (.xlsx)
                   </a>
                 </div>
